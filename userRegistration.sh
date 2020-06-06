@@ -12,7 +12,7 @@ function condCheck() {
 }
 
 read -p "Enter your first name " fName
-condCheck $fname $namePattern
+condCheck $fName $namePattern
 
 read -p "Enter your last name " lName
 condCheck $lName $namePattern
