@@ -17,7 +17,7 @@ read -p "Enter your first name " fName
 condCheck $fName $namePattern
 
 read -p "Enter your last name " lName
-condCheck $lMame $namePattern
+condCheck $lName $namePattern
 
 read -p "Enter your email id " validEmail
 condCheck $validEmail $emailPattern
