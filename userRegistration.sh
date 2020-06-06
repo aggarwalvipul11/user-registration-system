@@ -15,4 +15,4 @@ read -p "Enter your first name " fName
 condCheck $fname $namePattern
 
 read -p "Enter your last name " lName
-condCheck $lname $namePattern
+condCheck $lName $namePattern
