@@ -15,10 +15,7 @@ function condCheck() {
 }
 
 read -p "Enter your first name: " fName
-condCheck $fname $namePattern
-
-read -p "Enter your last name: " lName
-condCheck $lname $namePattern
+condCheck $fName $namePattern
 
 read -p "Enter your email id: " validEmail
 condCheck $validEmail $emailPattern
