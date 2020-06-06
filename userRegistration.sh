@@ -1,5 +1,7 @@
 #!/bin/bash -x
 
+namePattern="^[A-Z][a-z]{3,}"
+
 function condCheck() {
 	if [[ $1 =~ $2 ]]
 	then
@@ -10,7 +12,7 @@ function condCheck() {
 }
 
 read -p "Enter your first name " fName
-
-namePattern="^[A-Z][a-z]{2,}"
 condCheck $fname $namePattern
 
+read -p "Enter your last name " lName
+condCheck $lname $namePattern
