@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 namePattern="^[A-Z][a-z]{3,}"
-emailPattern="^[A-Za-z0-9]*[\-\+\.0-9]*[a-zA-z0-9]+[@][a-z0-9]+[.]+[a-z]{2,3}$"
+emailPattern="^[A-Za-z0-9]*[\-\+\.0-9]*[a-zA-z0-9]+[@][a-z0-9]+[.]+[a-z*[.]*][a-z]{2,3}$"
 phoneNumberPattern="^[0-9]{2}(\s)[0-9]{10}$"
 passwordPattern="^[a-zA-Z]{8,}*[A-Z]{1,}*[0-9]{1,}"
 
@@ -15,10 +15,10 @@ function condCheck() {
 }
 
 read -p "Enter your first name: " fName
-condCheck $fname $namePattern
+condCheck $fName $namePattern
 
 read -p "Enter your last name: " lName
-condCheck $lname $namePattern
+condCheck $lName $namePattern
 
 read -p "Enter your email id: " validEmail
 condCheck $validEmail $emailPattern
