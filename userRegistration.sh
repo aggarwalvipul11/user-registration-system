@@ -12,5 +12,5 @@ function condCheck() {
 read -p "Enter your first name " fName
 
 namePattern="^[A-Z][a-z]{2,}"
-condCheck $fname $namePattern
+condCheck $fName $namePattern
 
